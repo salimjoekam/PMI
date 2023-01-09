@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Nav (bootstrap) -->
+
+
+<nav class="main-navbar sticky-top navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="asset-img/PMI-logo.png" alt="Logo PMI">
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="menu-main-navbar collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="#">Beranda</a>
+      <a class="nav-item nav-link" href="#">Publikasi</a>
+      <a class="nav-item nav-link" href="#">Faq</a>
+      <a class="nav-item nav-link" href="#">Tentang Kami</a>
+      <a class="nav-item nav-link" href="#">Pelayanan PMI</a>
+      <div class="donasi-login-bhs">
+        <a href="" class="donasi">Donasi</a>
+          <div class="dropdown-profile">
+        <div class="profile-login">
+          <p>HI, Solihin</p>
+          <img src="asset-img/jefri.png" alt="">
+        </div>
+        <div class="dropdown-profile-content">
+            <img src="asset-img/jefri.png" alt="" width="50%">
+            <p class="nama-header">Solihin Najibullah</p>
+            <p>solihin.najibulah@gmail.com</p>
+
+            <div class="profile-content-header">
+              <div class="pch-child">
+                <a href="">Profile</a>
+                <img src="asset-img/user.png" alt="">
+              </div>
+              <div class="pch-child">
+                <a href="">Personal Information</a>
+                <img src="asset-img/paper.png" alt="">
+              </div>
+              <div class="pch-child">
+                <a href="">Kata Sandi</a>
+                <img src="asset-img/lock.png" alt="">
+              </div>
+              <div class="pch-child">
+                <a href="">Keluar</a>
+                <img src="asset-img/logout.png" alt="">
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="dropdown-notif">
+        <div class="notif-login">
+          <img src="asset-img/notif.png" alt="">
+        </div>
+        <div class="dropdown-notif-content">
+          <div class="dnc-child">
+            <img src="asset-img/warning.png" alt="">
+            <p>Cek riwayat donasi anda untuk melihat kwitansi donasi anda!</p>
+          </div>
+
+          <div class="dnc-child">
+            <img src="asset-img/file.png" alt="">
+            <p>Segera cek akun Anda untuk melihat program donasi terbaru!</p>
+          </div>
+
+          <div class="dnc-child">
+            <img src="asset-img/like.png" alt="">
+            <p>Donasi anda berhasil, silahkan cek riwayat donasi Anda!</p>
+          </div>
+        </div>
+      </div>
+        <a href="" class="bhs">
+          <img src="asset-img/flag.png" alt="">
+        </a>  
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!--  -->
+
+
+<!-- Profile & Donasi -->
+
+<div class="profile-user">
+  <div class="profile">
+
+    <div class="red"></div>
+
+    <div class="profile-data">
+      <img src="asset-img/jefri.png" alt="">
+      <p>Selamat Datang,</p>
+      <h3 class="profile-data-nama">Solihin Najibullah</h3>
+    </div>
+
+    <div class="donasi-data">
+      <div class="total-donasi-umum">
+        <h3>21</h3>
+        <p>Total Donasi Umum</p>
+      </div>
+
+      <div class="total-donasi-program">
+        <h3>23</h3>
+        <p>Total Donasi Programm</p>
+      </div>
+
+
+      <div class="total-donasi-khusus">
+        <h3>101</h3>
+        <p>Total Donasi Khusus</p>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<!--  -->
+
+<!-- Report, Profile, Data -->
+
+<div class="container">
+  <div class="report-profile-data row">
+
+    <div class="">
+    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+      <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-profil" role="tab" aria-controls="v-pills-home" aria-selected="true">Profil</a>
+      <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-pi" role="tab" aria-controls="v-pills-profile" aria-selected="false">Personal Information</a>
+      <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-mpass" role="tab" aria-controls="v-pills-messages" aria-selected="false">Kata Sandi</a>
+
+    </div>
+    </div>
+    
+
+    <div class="col-md-10">
+    <div class="tab-content" id="v-pills-tabContent">
+      <div class="tab-pane fade show active" id="v-pills-profil" role="tabpanel" aria-labelledby="v-pills-home-tab">
+        
+        <div class="laporan-donasi">
+          <h3>Laporan Donasi Kamu</h3>
+
+          <div class="table-donasi-tile">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">No</th>
+                  <th scope="col">Program Donasi</th>
+                  <th scope="col">Tanggal</th>
+                  <th scope="col">Jumlah Donasi</th>
+                  <th scope="col">Metode Transaksi</th>
+                  <th scope="col">E-Receipt</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+
+          <div class="table-donasi-data">
+            <table class="table">
+              <tbody class="table-donasi-data">
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Lorem Ipsum</td>
+                  <td>12/04/2019</td>
+                  <td>Rp 100.000</td>
+                  <td>Bank Transfer</td>
+                  <td><img src="asset-img/download.png" alt=""></td>
+                </tr>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Lorem Ipsum</td>
+                  <td>12/04/2019</td>
+                  <td>Rp 100.000</td>
+                  <td>Bank Transfer</td>
+                  <td><img src="asset-img/download.png" alt=""></td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Lorem Ipsum</td>
+                  <td>12/04/2019</td>
+                  <td>Rp 100.000</td>
+                  <td>Bank Transfer</td>
+                  <td><img src="asset-img/download.png" alt=""></td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Lorem Ipsum</td>
+                  <td>12/04/2019</td>
+                  <td>Rp 100.000</td>
+                  <td>Bank Transfer</td>
+                  <td><img src="asset-img/download.png" alt=""></td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Lorem Ipsum</td>
+                  <td>12/04/2019</td>
+                  <td>Rp 100.000</td>
+                  <td>Bank Transfer</td>
+                  <td><img src="asset-img/download.png" alt=""></td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>Lorem Ipsum</td>
+                  <td>12/04/2019</td>
+                  <td>Rp 100.000</td>
+                  <td>Bank Transfer</td>
+                  <td><img src="asset-img/download.png" alt=""></td>
+                </tr>
+                <tr>
+                <th scope="row">6</th>
+                  <td>Lorem Ipsum</td>
+                  <td>12/04/2019</td>
+                  <td>Rp 100.000</td>
+                  <td>Bank Transfer</td>
+                  <td><img src="asset-img/download.png" alt=""></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="tab-pane fade" id="v-pills-pi" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+        <div class="edit-profile">
+          <h3>Edit Form</h3>
+
+          <div class="edit-profile-field">
+
+            <div class="nama-email-edit"> <!-- flex -->
+              <div class="nama-edit">
+                <p>Nama Lengkap</p>
+                <input type="text" id="fname" name="fname">
+              </div>
+
+              <div class="email-edit">
+                <p>Email</p>
+                <input type="text" id="fname" name="fname">
+              </div>
+            </div>
+
+            <div class="gender-telp-edit"> <!-- flex -->
+              <div class="nama-edit">
+                <p>Jenis Kelamin</p>
+                <input type="text" id="fname" name="fname">
+              </div>
+              
+              <div class="telp-edit">
+                <p>Nomor Telepon</p>
+                <input type="text" id="fname" name="fname">
+              </div>
+            </div>
+
+            <div class="born-org-edit"> <!-- flex -->
+              <div class="born-edit">
+                <p>Jenis Kelamin</p>
+                <input type="text" id="fname" name="fname">
+              </div>
+              
+              <div class="org-edit">
+                <p>Nomor Telepon</p>
+                <input type="text" id="fname" name="fname">
+              </div>
+            </div>
+
+            <div class="address-edit"> <!-- flex -->
+              <div class="address-address-edit">
+                <p>Alamat Lengkap</p>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+              </div>
+            </div>
+
+
+            <a href="" class="simpan">Simpan</a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="v-pills-mpass" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+        <div class="edit-sandi">
+          <h3>Ubah Kata Sandi</h3>
+
+          <div class="edit-sandi-field">
+
+            <div class="sandi-edit"> <!-- flex -->
+              <div class="sandi-lama-edit">
+                <p>Kata Sandi Lama</p>
+                <input type="text" id="fname" name="fname">
+              </div>
+
+              <div class="sandi-baru-edit">
+                <p>Kata Sandi Baru</p>
+                <input type="text" id="fname" name="fname">
+              </div>
+
+              <div class="sandi-confirm-edit">
+                <p>Ulangi Kata Sandi</p>
+                <input type="text" id="fname" name="fname">
+              </div>
+
+            </div>
+
+            <div class="sandi-btn">
+              <a href="">Simpan</a>
+            </div>
+            
+          </div>
+
+        </div>
+      </div>
+    </div>     
+    </div>
+
+  </div>
+</div>
+  
+
+
+<script src="jquery-3.6.3.min.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>   
+</body>
+</html>
